@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+  background-color: #0F52BA;
+
+}
+
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+</style>
+</head>
+<body>
+
+<div class="container" align="center" style="background-color: rgba(0, 0, 0,0.3);">
+  <div class="intro-header" style="background-color:rgba(0, 0, 0, 0.5)">
+    <div class="text-effect" style="background-color:rgba(0, 0, 0, 0.5);">
+    <span>Chat Room</span>
+    <style type="text/css">@import url('https://fonts.googleapis.com/css?family=Raleway|Sacramento');
+body{
+    background: #222;
+    background-image: repeating-linear-gradient( to bottom, transparent 7px, rgba(0, 0, 0, 0.8) 9px, rgba(0, 0, 0, 0.8) 13px, transparent 13px );
+}
+.text-effect{
+    color: #fff6a9;
+    font-family: 'Bangers';
+    font-size: 120px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 20px auto 0;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    position: relative;
+    animation: animate 2s ease-in-out infinite;
+}
+@keyframes animate{
+    20%, 24%, 55%{
+        color: #111;
+        text-shadow: none;
+    }
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100%{
+        color: #fff6a9;
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    }
+}
+@media only screen and (max-width: 990px){
+    .text-effect{ font-size: 100px; }
+}
+@media only screen and (max-width: 767px){
+    .text-effect{ font-size: 80px; }
+}
+@media only screen and (max-width: 479px){
+    .text-effect{ font-size: 60px; }
+}
+@media only screen and (max-width: 359px){
+    .text-effect{ font-size: 45px; }
+}</style>
+</div> 
+
+   
+
+  </div>
+</div>
+
+<div class="container" style="background-color: #90B7D5">
+    <style>
+    input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+
+    input[type=submit] {
+    width: 100%;
+    background-color:#1C364A;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+    background-color:   #0E1B25;
+    }
+
+    div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    }
+    </style>
+
+    <form id="post-form" method="POST" action="checkview">
+        {% csrf_token %}
+        <label style="color: black;">Room Name</label>
+        <input type="text" name="room_name" id="room_name" width="100px" />
+        <label style="color: black;">Username</label>
+        <input type="text" name="username" id="username" width="100px" />
+        <input type="submit" style="color:whitesmoke;border: 10px;" value="Enter Room">
+    </form>
+</div>
+
+<p style="color:whitesmoke; text-align: center;background-color: rgba(0, 0, 0, 0.8);"> CREATED BY: SHREERAM S,SURYA K,SHRUTHI K,ILAKIA S R | MENTOR: MRS.THEJESWARI.C.K</p>
+</body>
+
+<style>
+body {
+  background-image: url('https://wallpaperaccess.com/full/3204572.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+</html>
